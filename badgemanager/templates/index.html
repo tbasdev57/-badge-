@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Liste de Cartes</title>
+
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<style>
+			a {
+				color: #cd170a;
+			}
+			span {
+				color: #bb0000;
+			}
+		</style>
+	</head>
+	<body class="bg-gray-100">
+		<div class="container mx-auto px-4 py-8">
+			<h1 class="text-3xl font-bold text-center mb-8">Liste de Cartes</h1>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+				<div class="bg-white rounded-lg shadow-md">
+					<img
+						src="{% static 'images/seagull-4795739_640.jpg' %}"
+						alt="Image de la carte"
+						class="w-full h-40 object-cover rounded-t-lg"
+					/>
+					<div class="p-4">
+						<div class="flex justify-between">
+							<a href="./detail.html">
+								<h3 class="text-lg font-bold mb-2">
+									Titre de la carte
+								</h3>
+							</a>
+							<div class="flex items-center text-gray-500">
+								<i class="fa fa-solid fa-eye ml-4 mr-2"></i>
+								<span id="view-count-1">100</span>
+							</div>
+						</div>
+						<div class="flex justify-between">
+							<div class="flex items-center">
+								<img
+									src="{% static 'images/portrait-7676482_640.jpg' %}"
+									alt="Photo de l'auteur"
+									class="w-8 h-8 rounded-full mr-2"
+								/>
+								<a href="./profile.html"><span>Auteur</span></a>
+							</div>
+							<div class="flex items-center text-gray-500">
+								<i class="fa fa-solid fa-calendar mr-2"></i>
+								<span id="time-ago-1">Il y a X jours</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

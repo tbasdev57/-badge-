@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile</title>
+
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<style>
+			a {
+				color: #cd170a;
+			}
+			span {
+				color: #bb0000;
+			}
+		</style>
+	</head>
+	<body class="bg-gray-100">
+		<div class="container mx-auto text-gray-300 min-h-screen p-10">
+			<!-- header -->
+			<div class="flex justify-center">
+				<img
+					class="mr-6"
+					style="width: 300px"
+					src="./static/images/portrait-7676482_640.jpg"
+				/>
+				<div class="flex flex-col justify-center">
+					<!-- content -->
+					<h4
+						class="mt-0 mb-2 uppercase text-gray-500 tracking-widest text-xs"
+					>
+						Profile
+					</h4>
+					<h1 class="mt-0 mb-2 text-gray-600 text-4xl">Nbe Soro</h1>
+
+					<p class="text-gray-600 mb-2 text-sm">
+						With J. Cole, Quavo, Ty Dollar $ign
+					</p>
+					<p class="text-gray-600 mb-2 text-sm">
+						Inscrit <a>Il y'a 3 jour</a>
+					</p>
+					<div class="flex space-x-2">
+						<div
+							style="padding-top: 0.2em; padding-bottom: 0.2rem"
+							class="flex items-center space-x-1 text-xs px-2 bg-gray-200 text-gray-800 rounded-full"
+						>
+							<div
+								style="width: 0.4rem; height: 0.4rem"
+								class="bg-red-500 rounded-full"
+							></div>
+							<div>Étoile Montante</div>
+						</div>
+						<div
+							style="padding-top: 0.2em; padding-bottom: 0.2rem"
+							class="flex items-center space-x-1 text-sm px-2 bg-gray-200 text-gray-800 rounded-full"
+						>
+							<div
+								style="width: 0.4rem; height: 0.4rem"
+								class="bg-red-500 rounded-full"
+							></div>
+							<div>Collectionneur</div>
+						</div>
+						<div
+							style="padding-top: 0.2em; padding-bottom: 0.2rem"
+							class="flex items-center space-x-1 text-sm px-2 bg-gray-200 text-gray-800 rounded-full"
+						>
+							<div
+								style="width: 0.4rem; height: 0.4rem"
+								class="bg-red-500 rounded-full"
+							></div>
+							<div>Vétéran</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- song list   -->
+			<div class="mt-10">
+				<!-- song list header -->
+				<div class="flex text-gray-600">
+					<div class="p-2 w-8 flex-shrink-0"></div>
+					<div class="p-2 w-full">Title</div>
+					<div class="p-2 w-full">Author</div>
+					<div class="p-2 w-full">Publish date</div>
+					<div class="p-2 w-12 flex-shrink-0 text-right">Views</div>
+				</div>
+
+				<div
+					class="flex border-b text-gray-600 border-gray-800 hover:bg-gray-800 hover:text-white"
+				>
+					<div class="p-3 w-8 flex-shrink-0">▶️</div>
+					<div class="p-3 w-full">
+						<a href="./detail.html">My Song Here</a>
+					</div>
+					<div class="p-3 w-full">Nbe Soro</div>
+					<div class="p-3 w-full">Il y'a 2 jours</div>
+					<div class="p-3 w-12 flex-shrink-0 text-right">200</div>
+				</div>
+				<div
+					class="flex border-b text-gray-600 border-gray-800 hover:bg-gray-800 hover:text-white"
+				>
+					<div class="p-3 w-8 flex-shrink-0">▶️</div>
+					<div class="p-3 w-full">
+						<a href="./detail.html">My Song Here</a>
+					</div>
+					<div class="p-3 w-full">Nbe Soro</div>
+					<div class="p-3 w-full">Il y'a 2 jours</div>
+					<div class="p-3 w-12 flex-shrink-0 text-right">200</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
